@@ -1,0 +1,53 @@
+
+Veritabaný sql
+
+	Ogrenci tablosundaki tüm sütünlariyla beraber cekmek istiyorsak.
+		
+		SELECT * FROM ogrenciler;
+	
+	Eger istediðimiz sutunlari cekmek istiyorsak onlari yýldýz yeriden belirtmemiz gerekiyor.	
+		
+		SELECT ogrenciId, adi, soyadi FROM ogrenciler;
+
+	Eger aradýgýmýz bir veri varsa(satir) WHERE komutuyla bulabiliyoruz.
+	
+		SELECT * FROM ogrenciler WHERE ogrenciId = ?; Açýklama : ? olan kýsma ogrenciId türünde bir deger girmelisiniz.	
+		
+		SELECT adi, soyad FROM ogrenciler WHERE ogrenciId = ?;
+		
+		SELECT * FROM ogrenciler WHERE adi = '?'; Açýklama : = ? olan kýsma adi türünde bir deger girmeliyiz. ' ' String olan degerler bu sekilde aranýr.
+		
+	Bir tabloya veri eklemek istiyorsak 
+		
+		INSERT INTO tabloAdi(sütun1, sutun2, sutun3) VALUES(sutun1 türünde deger gir, sutun2 türünde deger gir, sutun3 türünde deger gir);
+		
+		INSERT INTO ogrenciler(ogrenciId, adi, soyadi, dogumYili, okulNumarasi) VALUES(3, 'Osman', 'Aslan', 1989, '2015255');	
+		
+	Bir tablodan veri silmek için
+	
+		DELETE FROM tabloAdi WHERE sütunAdi = sütün türünde bir deger;
+		
+		DELETE FROM ogrenciler WHERE ogrenciId = 3;
+		
+		DELETE FROM ogrenciler WHERE adi = 'Ferhat';
+		
+	Bir tablo satirini güncellemek istiyorsak
+		
+		UPDATE tabloAdi SET guncellenecekSutun = '', .... , .... WHERE hangiSatir = ?; 
+		
+		UPDATE ogrenciler SET adi = 'Ömer', soyadi = 'Yildiz', dogumYili = 2200, okulNumarasi = '312312' WHERE ogrenciId = 2;	
+		
+		UPDATE ogrenciler SET adi = 'Ömer', soyadi = 'Yildiz', dogumYili = 2200, okulNumarasi = '312312' WHERE adi = 'Burak';	
+		
+		UPDATE ogrenciler SET adi = 'Ömer', soyadi = 'Yildiz', dogumYili = 2200, okulNumarasi = '312312' WHERE soyadi = ' ';
+		
+		UPDATE ogrenciler SET adi = 'Ömer', soyadi = 'Yildiz', dogumYili = 2200, okulNumarasi = '312312' WHERE okulNumarasi = ' ';		
+	
+	Bir tablo olusturma
+		
+		create table tabloadi(adresId int primary key not null, sokak varchar(20), mahalle varchar(15), sehir varchar(20) not null);
+		
+		create table adres(adresId int primary key not null, sokak varchar(20), mahalle varchar(15), sehir varchar(20) not null);
+
+		
+		

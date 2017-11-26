@@ -1,0 +1,52 @@
+30.07.2017 Pazar:
+Java Giriþ Videolar,
+10,06
+13,10
+14,58
+09,02
+15,50
+19,09
+24,34
+20,13
+20,46
+Toplam : 146,28dk
+
+
+31.07.2017 Pazartesi:
+Java Giriþ Videolar,
+20,17
+28,22
+11,48
+
+01.08.2017 Salý:
+Java Giriþ Videolar:
+15,07
+16,46
+09,07
+05,19
+22,36
+24,03
+09,11
+
+04.08.2017 Cuma:
+Java Giriþ Videolar:
+18,11
+
+07.08.2017 Pazartesi:
+Java Giriþ Videolar:
+25,33
+16,54
+37,44
+
+08.08.2017 Salý:
+Java Giriþ Videolar:
+23,10
+08,10
+09,15
+
+
+/*
+super() ile bir üst sýnýfýn constractor una ulaþýrýz..
+super her zaman yukarda olmak zorunda.
+interface içinde zadece zorunlu metotlarý bulundurur. Kendine ait bir controctor ý yoktur.
+*/

@@ -1,0 +1,12 @@
+Eclipse Kýsayollar:
+Ctrl + N = Hýzlý class,package ... oluþturma
+main + CTRLSPACE = hýzlý main
+syso + CTRLSPACE = ........
+Ctrl + D = oto satýr silme
+Ctrl + A = toplu seçim
+Ctrl + Shift + F = kodlarý düzene sokar
+Alt + Shift + S = hýzlý iþlem menüsü
+
+
+
+76,22
